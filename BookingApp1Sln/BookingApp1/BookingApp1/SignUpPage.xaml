@@ -9,27 +9,25 @@
         <StackLayout>
             <Label Text="Sign Up"
                    FontSize="15"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label Text="Name"/>
-            <Editor Placeholder="Enter Name" Text="{Binding Name}"/>
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="Name and Surname"/>
+            <Editor Placeholder="Enter Name and Surname" Text="{Binding Name}"/>
 
             <Label Text="Gender"/>
             <Editor Placeholder="Enter Gender" Text="{Binding Gender}"/>
 
-            <Label Text="T-Shirt Size"/>
-            <Editor Placeholder="Enter Size" Text="{Binding T-Shirt Size }"/>
+            <Label Text="Identity Number"/>
+            <Editor Placeholder="Enter Identity Number" Text="{Binding Identity Number }"/>
 
-            <Label Text="T-Shirt Color"/>
-            <Editor Placeholder="Enter Color" Text="{Binding T-Shirt Color }"/>
+            <Label Text="E-mail"/>
+            <Editor Placeholder="Enter E-mail" Text="{Binding E-mail }"/>
+            <Button Text="Back To Login" Command="{Binding NavigateCommand}" />
 
 
 
 
-            <Label Text="Shipping Address"/>
-            <Editor Placeholder="Enter Address" Text="{Binding ShippingAddress}"/>
-            <Label Text="Date of order"/>
-            <DatePicker Format="D" VerticalOptions="CenterAndExpand" Margin="10, 0" Date="{Binding DateOfOrder}" />
+            
 
 
 
