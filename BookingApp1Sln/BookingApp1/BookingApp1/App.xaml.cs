@@ -23,14 +23,14 @@ namespace BookingApp1
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+          var result = await NavigationService.NavigateAsync("MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<TheContent, TheContentViewModel>();
+            containerRegistry.RegisterForNavigation<SignUpPage,SignUpPageViewModel>();
+
         }
     }
 }

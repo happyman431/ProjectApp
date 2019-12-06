@@ -18,6 +18,11 @@
 
     
     <Button Text="Login" Command="{Binding DeleteCommand}" />
+    <Button Text="Sign up" Command="{Binding DeleteCommand}" />
+        <Button Text="Navigate to SignUpPage " Command="{Binding NavigateCommand}" />
+        
+        
+        
     
     
     </StackLayout>

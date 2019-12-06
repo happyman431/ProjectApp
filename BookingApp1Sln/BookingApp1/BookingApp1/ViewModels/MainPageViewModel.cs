@@ -10,10 +10,28 @@ namespace BookingApp1.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        private DelegateCommand _navigateCommand;
+        public DelegateCommand NavigateCommand =>
+            _navigateCommand ?? (_navigateCommand = new DelegateCommand(ExecuteNavigateCommand));
+
+        public MainPageViewModel(INavigationService navigationService) : base(navigationService)
         {
             Title = "Main Page";
+      
+        }
+
+
+        async void ExecuteNavigateCommand()
+        {
+            await NavigationService.NavigateAsync("SignUpPage");
+
         }
     }
 }
+
+
+        
+            
+        
+       
+    

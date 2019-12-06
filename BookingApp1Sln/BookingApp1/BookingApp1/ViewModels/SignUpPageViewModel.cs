@@ -6,11 +6,12 @@ using System.Linq;
 
 namespace BookingApp1.ViewModels
 {
-    public class TheContentViewModel : BindableBase
+    public class SignUpPageViewModel : BindableBase
     {
-        public TheContentViewModel()
+        public SignUpPageViewModel()
         {
-          
+
+
         }
     }
 }

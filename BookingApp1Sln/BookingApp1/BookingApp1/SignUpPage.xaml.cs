@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace BookingApp1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TheContent : ContentPage
+    public partial class SignUpPage : ContentPage
     {
-        public TheContent()
+        public SignUpPage()
         {
             InitializeComponent();
         }
