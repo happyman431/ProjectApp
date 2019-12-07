@@ -31,6 +31,8 @@ namespace BookingApp1
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SignUpPage,SignUpPageViewModel>();
 
+            
+
         }
     }
 }

@@ -16,8 +16,8 @@
     <Label Text="password"/>
     <Editor Placeholder="Enter password" Text="{Binding Gender}"/>
 
-    
-    <Button Text="Login" Command="{Binding DeleteCommand}" />
+
+        <Button Text="Login" Command="{Binding NavigateCommand}" />
         <Button Text="Sign up" Command="{Binding NavigateCommand}" />
         
         

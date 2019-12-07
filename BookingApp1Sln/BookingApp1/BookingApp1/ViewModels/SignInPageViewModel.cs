@@ -1,37 +1,33 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace BookingApp1.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class SignInPageViewModel : ViewModelBase
     {
         private DelegateCommand _navigateCommand;
         public DelegateCommand NavigateCommand =>
             _navigateCommand ?? (_navigateCommand = new DelegateCommand(ExecuteNavigateCommand));
 
-        public MainPageViewModel(INavigationService navigationService) : base(navigationService)
+        public SignInPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Main Page";
-      
-        }
+            Title = "Sign In Page";
 
+        }
 
         async void ExecuteNavigateCommand()
         {
-            await NavigationService.NavigateAsync("SignUpPage");
-            await NavigationService.NavigateAsync("SignInPage");
+            await NavigationService.NavigateAsync("MainPage");
+
+
+
+
+
+
+
         }
     }
 }
-
-
-        
-            
-        
-       
-    
